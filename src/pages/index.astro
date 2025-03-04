@@ -1,21 +1,190 @@
 ---
 import Slideshow from '../components/Slideshow.astro';
+import CalendarIcon from "../assets/icons/calendar.svg";
+import ArrowRightIcon from "../assets/icons/arrow-right.svg";
+import LinkIcon from "../assets/icons/link.svg";
+import CreditCardIcon from "../assets/icons/credit-card.svg";
+import CompassIcon from "../assets/icons/compass.svg";
 import Base from '../layouts/Base.astro';
 ---
 
 <Base>
 	<Slideshow />
-	<div class="grid grid-cols-5">
+	<div class="grid grid-cols-5 gap-8">
 		<div>
-			<div class="bg-white h-96">
-				Test
-			</div>
+			<ul class="bg-primary border-t-8 px-6 py-4 border-primary-darken text-white font-light">
+				<li>
+					<a class="block font-bold p-2 border-b border-white/20 hover:bg-white/10 uppercase" href="#">Home</a>
+				</li>
+				<li>
+					<a class="block p-2 border-b border-white/20 hover:bg-white/10 uppercase" href="#">News</a>
+				</li>
+				<li>
+					<a class="block p-2 border-b border-white/20 hover:bg-white/10 uppercase" href="#">Events</a>
+				</li>
+				<li>
+					<a class="block p-2 border-b border-white/20 hover:bg-white/10 uppercase" href="#">Gallery</a>
+				</li>
+				<li>
+					<a class="block p-2 border-b border-white/20 hover:bg-white/10 uppercase" href="#">Documents</a>
+				</li>
+				<li>
+					<a class="block p-2 border-b border-white/20 hover:bg-white/10 uppercase" href="#">Ordinances</a>
+				</li>
+				<li>
+					<a class="block p-2 hover:bg-white/10 uppercase" href="#">Contact</a>
+				</li>
+			</ul>
 		</div>
 		<div class="col-span-3">
-			
+			<div class="bg-black/80 text-white p-8 mb-8">
+				<h1 class="font-bold text-3xl mb-4 uppercase">New vacation home / short-term rental (Air BNB) ordinance passed</h1>
+				<p class="font-light">If you have any questions, please contact Gina at gconover@rlpil.com. ALL Air BNB and short-term rentals must be registered with the Village of Round Lake Park with a valid certificate of insurance and require a License.</p>
+			</div>
+			<div class="bg-white p-8 mb-8">
+				<h2 class="flex items-center gap-2 font-bold uppercase text-xl mb-4 text-black">
+					<LinkIcon class="h-5 text-primary -ml-1" />
+					Quick Links
+				</h2>
+				<div class="grid grid-cols-2 gap-4">
+					<button class="transition-all duration-200 ease-in-out text-left hover:border-l-4 border-primary hover:pl-4 cursor-pointer">
+						<p class="flex items-center gap-2 font-bold text-primary">
+							<CreditCardIcon class="h-4 text-primary -ml-1" />
+							Make a payment
+						</p>
+						<p class="font-light text-sm">Online payment of water bills and violations</p>
+					</button>
+					<button class="transition-all duration-200 ease-in-out text-left hover:border-l-4 border-primary hover:pl-4 cursor-pointer">
+						<p class="flex items-center gap-2 font-bold text-primary">
+							<CreditCardIcon class="h-4 text-primary -ml-1" />
+							Make a payment
+						</p>
+						<p class="font-light text-sm">Online payment of water bills and violations</p>
+					</button>
+					<button class="transition-all duration-200 ease-in-out text-left hover:border-l-4 border-primary hover:pl-4 cursor-pointer">
+						<p class="flex items-center gap-2 font-bold text-primary">
+							<CreditCardIcon class="h-4 text-primary -ml-1" />
+							Make a payment
+						</p>
+						<p class="font-light text-sm">Online payment of water bills and violations</p>
+					</button>
+					<button class="transition-all duration-200 ease-in-out text-left hover:border-l-4 border-primary hover:pl-4 cursor-pointer">
+						<p class="flex items-center gap-2 font-bold text-primary">
+							<CreditCardIcon class="h-4 text-primary -ml-1" />
+							Make a payment
+						</p>
+						<p class="font-light text-sm">Online payment of water bills and violations</p>
+					</button>
+					<button class="transition-all duration-200 ease-in-out text-left hover:border-l-4 border-primary hover:pl-4 cursor-pointer">
+						<p class="flex items-center gap-2 font-bold text-primary">
+							<CreditCardIcon class="h-4 text-primary -ml-1" />
+							Make a payment
+						</p>
+						<p class="font-light text-sm">Online payment of water bills and violations</p>
+					</button>
+					<button class="transition-all duration-200 ease-in-out text-left hover:border-l-4 border-primary hover:pl-4 cursor-pointer">
+						<p class="flex items-center gap-2 font-bold text-primary">
+							<CreditCardIcon class="h-4 text-primary -ml-1" />
+							Make a payment
+						</p>
+						<p class="font-light text-sm">Online payment of water bills and violations</p>
+					</button>
+					<button class="transition-all duration-200 ease-in-out text-left hover:border-l-4 border-primary hover:pl-4 cursor-pointer">
+						<p class="flex items-center gap-2 font-bold text-primary">
+							<CreditCardIcon class="h-4 text-primary -ml-1" />
+							Make a payment
+						</p>
+						<p class="font-light text-sm">Online payment of water bills and violations</p>
+					</button>
+					<button class="transition-all duration-200 ease-in-out text-left hover:border-l-4 border-primary hover:pl-4 cursor-pointer">
+						<p class="flex items-center gap-2 font-bold text-primary">
+							<CreditCardIcon class="h-4 text-primary -ml-1" />
+							Make a payment
+						</p>
+						<p class="font-light text-sm">Online payment of water bills and violations</p>
+					</button>
+				</div>
+			</div>
+			<div class="bg-white p-8">
+				<h2 class="flex items-center gap-2 font-bold uppercase text-xl mb-4 text-black">
+					<CompassIcon class="h-5 text-primary -ml-1" />
+					All Resources
+				</h2>
+				<div class="grid grid-cols-2 gap-4">
+					<div>
+						<h3 class="font-bold text-black text-xl uppercase mb-1">Residents</h3>
+						<a href="#" class="block py-1 text-primary font-light text-sm">Community Calendar</a>
+						<a href="#" class="block py-1 text-primary font-light text-sm">Community Resources</a>
+						<a href="#" class="block py-1 text-primary font-light text-sm">Emergency Notification System</a>
+						<a href="#" class="block py-1 text-primary font-light text-sm">Payment Center</a>
+						<a href="#" class="block py-1 text-primary font-light text-sm">Request Service</a>
+						<a href="#" class="block py-1 text-primary font-light text-sm">Round Lake Area Schools</a>
+						<a href="#" class="block py-1 text-primary font-light text-sm">Education Foundation</a>
+						<a href="#" class="block py-1 text-primary font-light text-sm">Village History</a>
+					</div>
+					<div>
+						<h3 class="font-bold text-black text-xl uppercase mb-1">Departments</h3>
+						<a href="#" class="block py-1 text-primary font-light text-sm">Community Calendar</a>
+						<a href="#" class="block py-1 text-primary font-light text-sm">Community Resources</a>
+						<a href="#" class="block py-1 text-primary font-light text-sm">Emergency Notification System</a>
+						<a href="#" class="block py-1 text-primary font-light text-sm">Payment Center</a>
+						<a href="#" class="block py-1 text-primary font-light text-sm">Request Service</a>
+						<a href="#" class="block py-1 text-primary font-light text-sm">Round Lake Area Schools</a>
+						<a href="#" class="block py-1 text-primary font-light text-sm">Education Foundation</a>
+						<a href="#" class="block py-1 text-primary font-light text-sm">Village History</a>
+					</div>
+					<div>
+						<h3 class="font-bold text-black text-xl uppercase mb-1">Government</h3>
+						<a href="#" class="block py-1 text-primary font-light text-sm">Community Calendar</a>
+						<a href="#" class="block py-1 text-primary font-light text-sm">Community Resources</a>
+						<a href="#" class="block py-1 text-primary font-light text-sm">Emergency Notification System</a>
+						<a href="#" class="block py-1 text-primary font-light text-sm">Payment Center</a>
+						<a href="#" class="block py-1 text-primary font-light text-sm">Request Service</a>
+						<a href="#" class="block py-1 text-primary font-light text-sm">Round Lake Area Schools</a>
+						<a href="#" class="block py-1 text-primary font-light text-sm">Education Foundation</a>
+						<a href="#" class="block py-1 text-primary font-light text-sm">Village History</a>
+					</div>
+					<div>
+						<h3 class="font-bold text-black text-xl uppercase mb-1">Businesses</h3>
+						<a href="#" class="block py-1 text-primary font-light text-sm">Community Calendar</a>
+						<a href="#" class="block py-1 text-primary font-light text-sm">Community Resources</a>
+						<a href="#" class="block py-1 text-primary font-light text-sm">Emergency Notification System</a>
+						<a href="#" class="block py-1 text-primary font-light text-sm">Payment Center</a>
+						<a href="#" class="block py-1 text-primary font-light text-sm">Request Service</a>
+						<a href="#" class="block py-1 text-primary font-light text-sm">Round Lake Area Schools</a>
+						<a href="#" class="block py-1 text-primary font-light text-sm">Education Foundation</a>
+						<a href="#" class="block py-1 text-primary font-light text-sm">Village History</a>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div>
-			
+			<div class="bg-white p-8 mb-8">
+				<h2 class="flex items-center gap-2 font-bold uppercase text-black">
+					<CalendarIcon class="h-4 text-primary -ml-1" />
+					Upcoming Events
+				</h2>
+				<div class="py-4 border-b border-black/20">
+					<p class="font-bold text-primary">Board Meeting</p>
+					<p class="font-light text-sm">Village of Round Lake Park</p>
+					<p class="font-light text-sm">March 4, 2025 | 6pm - 7pm</p>
+				</div>
+				<div class="py-4 border-b border-black/20">
+					<p class="font-bold text-primary">Board Meeting</p>
+					<p class="font-light text-sm">Village of Round Lake Park</p>
+					<p class="font-light text-sm">March 31, 2025 | 6pm - 7pm</p>
+				</div>
+				<div class="py-4 border-b border-black/20">
+					<p class="font-bold text-primary">Board Meeting</p>
+					<p class="font-light text-sm">Village of Round Lake Park</p>
+					<p class="font-light text-sm">March 4, 2025 | 6pm - 7pm</p>
+				</div>
+				<a href="#" class="flex items-center gap-2 font-bold text-primary mt-4 uppercase">
+					All Events
+					<ArrowRightIcon class="h-4" />
+				</a>
+			</div>
+			<img src="/form.png" class="hover:opacity-60 cursor-pointer">
 		</div>
 	</div>
 </Base>
