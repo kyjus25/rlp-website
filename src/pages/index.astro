@@ -12,7 +12,7 @@ import Base from '../layouts/Base.astro';
 	<Slideshow />
 	<div class="grid grid-cols-5 gap-8">
 		<div>
-			<ul class="bg-primary border-t-8 px-6 py-4 border-primary-darken text-white font-light">
+			<ul class="bg-primary border-t-8 px-6 py-4 border-primary-darken text-white font-light mb-8">
 				<li>
 					<a class="block font-bold p-2 border-b border-white/20 hover:bg-white/10 uppercase" href="#">Home</a>
 				</li>
@@ -35,6 +35,57 @@ import Base from '../layouts/Base.astro';
 					<a class="block p-2 hover:bg-white/10 uppercase" href="#">Contact</a>
 				</li>
 			</ul>
+			<div class="relative bg-[url('/background.jpg')] bg-cover bg-center mt-8 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-[rgba(0,0,0,0.7)] p-8">
+				<div class="relative z-10 text-white">
+					<h2 class="flex items-center gap-2 font-bold uppercase">
+						<CalendarIcon class="h-4 -ml-1" />
+						Weather Info
+					</h2>
+					<div class="flex items-center gap-4 py-4 border-b border-white/20">
+						<div class="">
+							<p class="font-bold text-white">Today</p>
+							<p class="font-light text-xs">February 25, 2025</p>
+						</div>
+						<div class="text-center flex-1">
+							<CalendarIcon class="mx-auto h-4" />
+						</div>
+						<div class="text-right">
+							<p class="font-bold text-white">54</p>
+							<p class="font-light text-xs">10mph</p>
+						</div>
+					</div>
+					<div class="flex items-center gap-4 py-4 border-b border-white/20">
+						<div class="">
+							<p class="font-bold text-white">Tuesday</p>
+							<p class="font-light text-xs">February 26, 2025</p>
+						</div>
+						<div class="text-center flex-1">
+							<CalendarIcon class="mx-auto h-4" />
+						</div>
+						<div class="text-right">
+							<p class="font-bold text-white">54</p>
+							<p class="font-light text-xs">10mph</p>
+						</div>
+					</div>
+					<div class="flex items-center gap-4 py-4 border-b border-white/20">
+						<div class="">
+							<p class="font-bold text-white">Wednesday</p>
+							<p class="font-light text-xs">February 27, 2025</p>
+						</div>
+						<div class="text-center flex-1">
+							<CalendarIcon class="mx-auto h-4" />
+						</div>
+						<div class="text-right">
+							<p class="font-bold text-white">54</p>
+							<p class="font-light text-xs">10mph</p>
+						</div>
+					</div>
+					<a href="#" class="block mt-4 text-xs">
+						Weather data by <a href="#">OpenWeatherMap.org</a>
+					</a>
+				</div>
+				
+			</div>
 		</div>
 		<div class="col-span-3">
 			<div class="bg-black/80 text-white p-8 mb-8">
@@ -42,7 +93,7 @@ import Base from '../layouts/Base.astro';
 				<p class="font-light">If you have any questions, please contact Gina at gconover@rlpil.com. ALL Air BNB and short-term rentals must be registered with the Village of Round Lake Park with a valid certificate of insurance and require a License.</p>
 			</div>
 			<div class="bg-white p-8 mb-8">
-				<h2 class="flex items-center gap-2 font-bold uppercase text-xl mb-4 text-black">
+				<h2 class="flex items-center gap-2 font-bold uppercase text-lg mb-4 text-black">
 					<LinkIcon class="h-5 text-primary -ml-1" />
 					Quick Links
 				</h2>
@@ -106,13 +157,13 @@ import Base from '../layouts/Base.astro';
 				</div>
 			</div>
 			<div class="bg-white p-8">
-				<h2 class="flex items-center gap-2 font-bold uppercase text-xl mb-4 text-black">
+				<h2 class="flex items-center gap-2 font-bold uppercase text-lg mb-4 text-black">
 					<CompassIcon class="h-5 text-primary -ml-1" />
 					All Resources
 				</h2>
 				<div class="grid grid-cols-2 gap-4">
 					<div>
-						<h3 class="font-bold text-black text-xl uppercase mb-1">Residents</h3>
+						<h3 class="font-bold text-black text-lg uppercase mb-1">Residents</h3>
 						<a href="#" class="block py-1 text-primary font-light text-sm">Community Calendar</a>
 						<a href="#" class="block py-1 text-primary font-light text-sm">Community Resources</a>
 						<a href="#" class="block py-1 text-primary font-light text-sm">Emergency Notification System</a>
@@ -123,7 +174,7 @@ import Base from '../layouts/Base.astro';
 						<a href="#" class="block py-1 text-primary font-light text-sm">Village History</a>
 					</div>
 					<div>
-						<h3 class="font-bold text-black text-xl uppercase mb-1">Departments</h3>
+						<h3 class="font-bold text-black text-lg uppercase mb-1">Departments</h3>
 						<a href="#" class="block py-1 text-primary font-light text-sm">Community Calendar</a>
 						<a href="#" class="block py-1 text-primary font-light text-sm">Community Resources</a>
 						<a href="#" class="block py-1 text-primary font-light text-sm">Emergency Notification System</a>
@@ -134,7 +185,7 @@ import Base from '../layouts/Base.astro';
 						<a href="#" class="block py-1 text-primary font-light text-sm">Village History</a>
 					</div>
 					<div>
-						<h3 class="font-bold text-black text-xl uppercase mb-1">Government</h3>
+						<h3 class="font-bold text-black text-lg uppercase mb-1">Government</h3>
 						<a href="#" class="block py-1 text-primary font-light text-sm">Community Calendar</a>
 						<a href="#" class="block py-1 text-primary font-light text-sm">Community Resources</a>
 						<a href="#" class="block py-1 text-primary font-light text-sm">Emergency Notification System</a>
@@ -145,7 +196,7 @@ import Base from '../layouts/Base.astro';
 						<a href="#" class="block py-1 text-primary font-light text-sm">Village History</a>
 					</div>
 					<div>
-						<h3 class="font-bold text-black text-xl uppercase mb-1">Businesses</h3>
+						<h3 class="font-bold text-black text-lg uppercase mb-1">Businesses</h3>
 						<a href="#" class="block py-1 text-primary font-light text-sm">Community Calendar</a>
 						<a href="#" class="block py-1 text-primary font-light text-sm">Community Resources</a>
 						<a href="#" class="block py-1 text-primary font-light text-sm">Emergency Notification System</a>
