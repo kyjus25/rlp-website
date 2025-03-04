@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --color-canvas: #f2f2f2;
+  --color-primary: #c32a27;
+  --color-accent: #1f3569;
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 2rem;
+}

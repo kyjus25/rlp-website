@@ -1,0 +1,27 @@
+---
+import Search from "./Search.astro";
+import MapIcon from '../assets/icons/map.svg';
+import Language from "./Language.astro";
+---
+
+<header>
+    <div class="container flex justify-between py-8">
+        <div>
+            <img src="/logo.png" alt="Village of Round Lake Park Logo" class="w-52">
+        </div>
+        <div class="flex items-center">
+            <p class="text-accent font-bold">Mayor Linda Lucassen</p>
+        </div>
+        <div>
+            <div class="flex items-center gap-8">
+                <Language />
+                <button class="flex items-center gap-2 bg-white hover:bg-white/90 py-2 px-3 text-black cursor-pointer">
+                    <MapIcon class="text-primary h-4" />
+                    Map
+                </button>
+                <Search />
+            </div>
+        </div>
+        
+    </div>
+</header>
