@@ -7,5 +7,8 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
-  }
+  },
+  outDir: 'dist',
+  site: 'https://kyjus25.github.io/rlp-website/',
+  base: '/rlp-website/',
 });
