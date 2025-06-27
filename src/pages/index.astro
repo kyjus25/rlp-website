@@ -11,8 +11,8 @@ import Base from '../layouts/Base.astro';
 
 <Base>
 	<Slideshow />
-	<div class="grid grid-cols-5 gap-8">
-		<div>
+	<div class="flex gap-8">
+		<div class="w-[270px] min-w-[270px]">
 			<ul class="bg-primary border-t-8 px-6 py-4 border-primary-darken text-white font-light mb-8">
 				<li>
 					<a class="block font-bold p-2 border-b border-white/20 hover:bg-white/10 uppercase" href="#">Home</a>
@@ -88,7 +88,7 @@ import Base from '../layouts/Base.astro';
 				
 			</div>
 		</div>
-		<div class="col-span-3">
+		<div class="w-full">
 			<div class="bg-black/80 text-white p-8 mb-8">
 				<h1 class="font-bold text-3xl mb-4 uppercase">New vacation home / short-term rental (Air BNB) ordinance passed</h1>
 				<p class="font-light">If you have any questions, please contact Gina at gconover@rlpil.com. ALL Air BNB and short-term rentals must be registered with the Village of Round Lake Park with a valid certificate of insurance and require a License.</p>
@@ -210,7 +210,7 @@ import Base from '../layouts/Base.astro';
 				</div>
 			</div>
 		</div>
-		<div>
+		<div class="w-[270px] min-w-[270px]">
 			<div class="bg-white p-8 mb-8">
 				<h2 class="flex items-center gap-2 font-bold uppercase text-black">
 					<CalendarIcon class="h-4 text-primary -ml-1" />
