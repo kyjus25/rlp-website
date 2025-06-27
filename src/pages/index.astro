@@ -6,6 +6,13 @@ import LinkIcon from "../assets/icons/link.svg";
 import CreditCardIcon from "../assets/icons/credit-card.svg";
 import CompassIcon from "../assets/icons/compass.svg";
 import CloudIcon from "../assets/icons/cloud.svg";
+import ShieldCheckIcon from "../assets/icons/shield-check.svg";
+import HouseIcon from "../assets/icons/house.svg";
+import ScrollTextIcon from "../assets/icons/scroll-text.svg";
+import CarFrontIcon from "../assets/icons/car-front.svg";
+import ListIcon from "../assets/icons/list.svg";
+import WrenchIcon from "../assets/icons/wrench.svg";
+import CalendarDaysIcon from "../assets/icons/calendar-days.svg";
 import Base from '../layouts/Base.astro';
 
 const isProd = import.meta.env.PROD;
@@ -101,64 +108,79 @@ const isProd = import.meta.env.PROD;
 					Quick Links
 				</h2>
 				<div class="grid grid-cols-2 gap-4">
+					<!-- Payment Center -->
 					<button class="transition-all duration-200 ease-in-out text-left hover:border-l-4 border-primary hover:pl-4 cursor-pointer">
-						<p class="flex items-center gap-2 font-bold text-primary">
-							<CreditCardIcon class="h-4 text-primary -ml-1" />
-							Make a payment
-						</p>
-						<p class="font-light text-sm">Online payment of water bills and violations</p>
+					<p class="flex items-center gap-2 font-bold text-primary">
+						<CreditCardIcon class="h-4 text-primary -ml-1" />
+						Make a Payment
+					</p>
+					<p class="font-light text-sm">Online payment of water bills and violations</p>
 					</button>
+
+					<!-- Police Department -->
 					<button class="transition-all duration-200 ease-in-out text-left hover:border-l-4 border-primary hover:pl-4 cursor-pointer">
-						<p class="flex items-center gap-2 font-bold text-primary">
-							<CreditCardIcon class="h-4 text-primary -ml-1" />
-							Make a payment
-						</p>
-						<p class="font-light text-sm">Online payment of water bills and violations</p>
+					<p class="flex items-center gap-2 font-bold text-primary">
+						<ShieldCheckIcon class="h-4 text-primary -ml-1" />
+						Police Department
+					</p>
+					<p class="font-light text-sm">Non-emergency police requests and contacts</p>
 					</button>
+
+					<!-- Building Department -->
 					<button class="transition-all duration-200 ease-in-out text-left hover:border-l-4 border-primary hover:pl-4 cursor-pointer">
-						<p class="flex items-center gap-2 font-bold text-primary">
-							<CreditCardIcon class="h-4 text-primary -ml-1" />
-							Make a payment
-						</p>
-						<p class="font-light text-sm">Online payment of water bills and violations</p>
+					<p class="flex items-center gap-2 font-bold text-primary">
+						<HouseIcon class="h-4 text-primary -ml-1" />
+						Building Department
+					</p>
+					<p class="font-light text-sm">Permits and inspections</p>
 					</button>
+
+					<!-- Village Ordinances -->
 					<button class="transition-all duration-200 ease-in-out text-left hover:border-l-4 border-primary hover:pl-4 cursor-pointer">
-						<p class="flex items-center gap-2 font-bold text-primary">
-							<CreditCardIcon class="h-4 text-primary -ml-1" />
-							Make a payment
-						</p>
-						<p class="font-light text-sm">Online payment of water bills and violations</p>
+					<p class="flex items-center gap-2 font-bold text-primary">
+						<ScrollTextIcon class="h-4 text-primary -ml-1" />
+						Village Ordinances
+					</p>
+					<p class="font-light text-sm">View regulations and codes</p>
 					</button>
+
+					<!-- Meetings & Minutes -->
 					<button class="transition-all duration-200 ease-in-out text-left hover:border-l-4 border-primary hover:pl-4 cursor-pointer">
-						<p class="flex items-center gap-2 font-bold text-primary">
-							<CreditCardIcon class="h-4 text-primary -ml-1" />
-							Make a payment
-						</p>
-						<p class="font-light text-sm">Online payment of water bills and violations</p>
+					<p class="flex items-center gap-2 font-bold text-primary">
+						<CalendarDaysIcon class="h-4 text-primary -ml-1" />
+						Village Meetings & Minutes
+					</p>
+					<p class="font-light text-sm">Agendas and past records</p>
 					</button>
+
+					<!-- Service Requests -->
 					<button class="transition-all duration-200 ease-in-out text-left hover:border-l-4 border-primary hover:pl-4 cursor-pointer">
-						<p class="flex items-center gap-2 font-bold text-primary">
-							<CreditCardIcon class="h-4 text-primary -ml-1" />
-							Make a payment
-						</p>
-						<p class="font-light text-sm">Online payment of water bills and violations</p>
+					<p class="flex items-center gap-2 font-bold text-primary">
+						<WrenchIcon class="h-4 text-primary -ml-1" />
+						Service Request
+					</p>
+					<p class="font-light text-sm">Submit service or maintenance issues</p>
 					</button>
+
+					<!-- Vehicle Stickers -->
 					<button class="transition-all duration-200 ease-in-out text-left hover:border-l-4 border-primary hover:pl-4 cursor-pointer">
-						<p class="flex items-center gap-2 font-bold text-primary">
-							<CreditCardIcon class="h-4 text-primary -ml-1" />
-							Make a payment
-						</p>
-						<p class="font-light text-sm">Online payment of water bills and violations</p>
+					<p class="flex items-center gap-2 font-bold text-primary">
+						<CarFrontIcon class="h-4 text-primary -ml-1" />
+						Vehicle Sticker
+					</p>
+					<p class="font-light text-sm">Sticker pricing and requirements</p>
 					</button>
+
+					<!-- Frequently Requested Links -->
 					<button class="transition-all duration-200 ease-in-out text-left hover:border-l-4 border-primary hover:pl-4 cursor-pointer">
-						<p class="flex items-center gap-2 font-bold text-primary">
-							<CreditCardIcon class="h-4 text-primary -ml-1" />
-							Make a payment
-						</p>
-						<p class="font-light text-sm">Online payment of water bills and violations</p>
+					<p class="flex items-center gap-2 font-bold text-primary">
+						<ListIcon class="h-4 text-primary -ml-1" />
+						Frequently Requested Links
+					</p>
+					<p class="font-light text-sm">Forms, permits, zoning, and more</p>
 					</button>
 				</div>
-			</div>
+				</div>
 			<div class="bg-white p-8">
 				<h2 class="flex items-center gap-2 font-bold uppercase text-lg mb-4 text-black">
 					<CompassIcon class="h-5 text-primary -ml-1" />

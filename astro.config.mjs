@@ -9,6 +9,6 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   outDir: 'dist',
-  site: 'https://kyjus25.github.io/rlp-website/',
-  base: '/rlp-website/',
+  site: import.meta.env.PROD ? 'https://kyjus25.github.io/rlp-website/' : undefined,
+  base: import.meta.env.PROD ? '/rlp-website/' : undefined,
 });
