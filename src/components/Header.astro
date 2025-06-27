@@ -2,12 +2,14 @@
 import Search from "./Search.astro";
 import MapIcon from '../assets/icons/map.svg';
 import Language from "./Language.astro";
+
+const isProd = import.meta.env.PROD;
 ---
 
 <header>
     <div class="container flex justify-between py-8">
         <div>
-            <img src="/logo.png" alt="Village of Round Lake Park Logo" class="w-52">
+            <img src={isProd ? '/rlp-website/logo.png' : '/logo.png'} alt="Village of Round Lake Park Logo" class="w-52">
         </div>
         <div class="flex items-center">
             <p class="text-accent font-bold">Mayor Linda Lucassen</p>

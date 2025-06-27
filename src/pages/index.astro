@@ -7,6 +7,8 @@ import CreditCardIcon from "../assets/icons/credit-card.svg";
 import CompassIcon from "../assets/icons/compass.svg";
 import CloudIcon from "../assets/icons/cloud.svg";
 import Base from '../layouts/Base.astro';
+
+const isProd = import.meta.env.PROD;
 ---
 
 <Base>
@@ -236,7 +238,7 @@ import Base from '../layouts/Base.astro';
 					<ArrowRightIcon class="h-4" />
 				</a>
 			</div>
-			<img src="/form.png" class="hover:opacity-60 cursor-pointer">
+			<img src={isProd ? '/rlp-website/form.png' : '/form.png'} class="hover:opacity-60 cursor-pointer">
 		</div>
 	</div>
 </Base>
