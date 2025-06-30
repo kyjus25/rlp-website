@@ -1,14 +1,17 @@
 services:
   wordpress:
-    image: wordpress:fpm-alpine
-    container_name: wordpress-fpm
+    image: wordpress:apache
+    container_name: wordpress
     restart: always
+    ports:
+      - "80:80"
     environment:
       WORDPRESS_DB_HOST: db
       WORDPRESS_DB_USER: wordpress
       WORDPRESS_DB_PASSWORD: wordpress
       WORDPRESS_DB_NAME: wordpress
-    # volumes:
+    volumes:
+      - ./themes:/var/www/html/wp-content/themes
     #   - wordpress_data:/var/www/html
 
   db:
@@ -20,8 +23,8 @@ services:
       MYSQL_USER: wordpress
       MYSQL_PASSWORD: wordpress
       MYSQL_ROOT_PASSWORD: rootpassword
-    # volumes:
-    #   - db_data:/var/lib/mysql
+    volumes:
+      - ./db:/var/lib/mysql
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
