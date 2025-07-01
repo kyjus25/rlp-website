@@ -1,0 +1,19 @@
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  background: #fff;
+}
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.card-header .dashicons {
+  font-size: 1.2rem;
+}
+.card-body {
+  padding-top: 0.5rem;
+}

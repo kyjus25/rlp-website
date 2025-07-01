@@ -1,8 +1,65 @@
-/*
-Theme Name: Village of Round Lake Park
-Author: Justin White
-Description: Village of Round Lake Park WordPress theme.
-Version: 1.0
-*/
-
 @import "tailwindcss" source("./themes/village-of-round-lake-park");
+
+@theme {
+  --color-canvas: #f2f2f2;
+  --color-primary: #c32a27;
+  --color-primary-darken: #9c221f;
+  --color-accent: #1f3569;
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 2rem;
+}
+
+h1 {
+    @apply text-4xl font-bold;
+}
+
+/* MetaSlider */
+.metaslider .caption-wrap {
+    @apply border-l-8 border-primary !m-4 !w-auto !bg-transparent !bg-gradient-to-r !from-black/70 !to-transparent !opacity-100;
+}
+.metaslider .caption {
+    @apply !p-4 !pr-16;
+}
+
+/* Page List */
+.wp-block-page-list,
+nav.wp-block-navigation {
+    @apply bg-primary border-t-8 px-6 py-4 border-primary-darken text-white font-light;
+}
+nav.wp-block-navigation li, nav.wp-block-navigation ul, nav.wp-block-navigation a {
+    @apply !w-full !gap-0;
+}
+.wp-block-page-list li a,
+nav.wp-block-navigation li a {
+    @apply block p-2 hover:bg-white/10 uppercase;
+}
+.wp-block-page-list li.current-menu-item a,
+nav.wp-block-navigation li.current-menu-item a {
+    @apply font-bold;
+}
+.wp-block-page-list li:not(:last-child) a,
+nav.wp-block-navigation li:not(:last-child) a {
+    @apply border-b border-white/20;
+}
+
+/* Tribe Upcoming Events */
+.tribe-events-widget-events-list {
+    @apply bg-white !p-8;
+}
+.tribe-events-widget-events-list > header h2 {
+    @apply flex items-center gap-4 font-bold uppercase text-black;
+}
+.tribe-events-widget-events-list__header-title::before {
+    @apply font-[dashicons] content-['\f508'] text-primary;
+}
+.tribe-events-widget-events-list__view-more-link {
+    @apply text-primary font-bold;
+}
+
+/* Tribe Events */
+.tribe-common {
+    @apply bg-white;
+}
