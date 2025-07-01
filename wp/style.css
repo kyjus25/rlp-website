@@ -16,6 +16,14 @@ h1 {
     @apply text-4xl font-bold;
 }
 
+h2 {
+    @apply text-lg font-bold;
+}
+
+h3 {
+    @apply text-lg font-bold;
+}
+
 /* MetaSlider */
 .metaslider .caption-wrap {
     @apply border-l-8 border-primary !m-4 !w-auto !bg-transparent !bg-gradient-to-r !from-black/70 !to-transparent !opacity-100;
@@ -47,10 +55,10 @@ nav.wp-block-navigation li:not(:last-child) a {
 
 /* Tribe Upcoming Events */
 .tribe-events-widget-events-list {
-    @apply bg-white !p-8;
+    @apply bg-white !p-8 !mb-0;
 }
 .tribe-events-widget-events-list > header h2 {
-    @apply flex items-center gap-4 font-bold uppercase text-black;
+    @apply flex items-center gap-4 text-lg font-bold uppercase text-black;
 }
 .tribe-events-widget-events-list__header-title::before {
     @apply font-[dashicons] content-['\f508'] text-primary;
@@ -61,5 +69,10 @@ nav.wp-block-navigation li:not(:last-child) a {
 
 /* Tribe Events */
 .tribe-common {
-    @apply bg-white;
+    @apply bg-white !mb-0;
+}
+
+/* Block Columns */
+.wp-block-columns > .wp-block-column { 
+    @apply flex flex-col gap-8;
 }

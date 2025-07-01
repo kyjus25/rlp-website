@@ -1,0 +1,12 @@
+.navigation-with-icon-item-editor {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-with-icon-item-editor .dashicons {
+    margin-right: 8px;
+}
+
+.navigation-with-icon-item-editor .components-text-control__input {
+    width: 100%;
+}

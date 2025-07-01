@@ -12,6 +12,8 @@
     --spacing: 0.25rem;
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
+    --text-lg: 1.125rem;
+    --text-lg--line-height: calc(1.75 / 1.125);
     --text-xl: 1.25rem;
     --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
@@ -258,6 +260,9 @@
   .grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+  .flex-col {
+    flex-direction: column;
+  }
   .items-center {
     align-items: center;
   }
@@ -266,6 +271,9 @@
   }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
+  }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
   }
   .gap-8 {
     gap: calc(var(--spacing) * 8);
@@ -472,6 +480,18 @@ h1 {
   --tw-font-weight: var(--font-weight-bold);
   font-weight: var(--font-weight-bold);
 }
+h2 {
+  font-size: var(--text-lg);
+  line-height: var(--tw-leading, var(--text-lg--line-height));
+  --tw-font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-bold);
+}
+h3 {
+  font-size: var(--text-lg);
+  line-height: var(--tw-leading, var(--text-lg--line-height));
+  --tw-font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-bold);
+}
 .metaslider .caption-wrap {
   margin: calc(var(--spacing) * 4) !important;
   width: auto !important;
@@ -535,6 +555,7 @@ nav.wp-block-navigation li, nav.wp-block-navigation ul, nav.wp-block-navigation 
   }
 }
 .tribe-events-widget-events-list {
+  margin-bottom: calc(var(--spacing) * 0) !important;
   background-color: var(--color-white);
   padding: calc(var(--spacing) * 8) !important;
 }
@@ -542,6 +563,8 @@ nav.wp-block-navigation li, nav.wp-block-navigation ul, nav.wp-block-navigation 
   display: flex;
   align-items: center;
   gap: calc(var(--spacing) * 4);
+  font-size: var(--text-lg);
+  line-height: var(--tw-leading, var(--text-lg--line-height));
   --tw-font-weight: var(--font-weight-bold);
   font-weight: var(--font-weight-bold);
   color: var(--color-black);
@@ -559,7 +582,13 @@ nav.wp-block-navigation li, nav.wp-block-navigation ul, nav.wp-block-navigation 
   color: var(--color-primary);
 }
 .tribe-common {
+  margin-bottom: calc(var(--spacing) * 0) !important;
   background-color: var(--color-white);
+}
+.wp-block-columns > .wp-block-column {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing) * 8);
 }
 @property --tw-gradient-position {
   syntax: "*";

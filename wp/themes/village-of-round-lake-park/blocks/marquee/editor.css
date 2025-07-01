@@ -1,5 +1,5 @@
 .wp-block-custom-marquee {
   border: 1px dashed #ccc;
   padding: 1rem;
-  background: #f9f9f9;
+  background: rgba(0,0,0,0.5);
 }

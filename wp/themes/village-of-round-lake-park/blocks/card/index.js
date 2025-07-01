@@ -41,10 +41,10 @@
         save: ( props ) => {
             const { attributes } = props;
 
-            return el('div', { className: 'card' },
-                el('div', { className: 'card-header' },
-                    el('span', { className: `dashicons ${attributes.icon}` }),
-                    el('h3', null, attributes.title)
+            return el('div', { className: 'card bg-white p-8' },
+                el('div', { className: 'flex items-center gap-4 font-bold uppercase text-black mb-4' },
+                    el('span', { className: `dashicons ${attributes.icon} text-primary` }),
+                    el('h2', null, attributes.title)
                 ),
                 el('div', { className: 'card-body' },
                     el(InnerBlocks.Content)
